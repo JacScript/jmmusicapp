@@ -5,9 +5,24 @@
 }
 
 .mainContainer{
-    width: 100%;
+    width: 95%;
     height: 80%;
-    background-color: black;
-    top: 50%;
+    top: 15%;
     margin: auto;
+    position: relative;
+    display: flex;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 850px){
+    .home{
+    background-color: rgb(202, 197, 197);
+    height: 120vh;
+    }
+
+    .mainContainer{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 }

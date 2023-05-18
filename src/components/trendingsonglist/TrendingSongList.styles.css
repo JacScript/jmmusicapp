@@ -1,0 +1,62 @@
+.trendingContainer{
+    width: 32%;
+    height: 100%;
+    background-color: rgba(38, 36, 36, 0.7);
+    border-radius: 13px ;
+}
+
+.container{
+    margin-top: 1.4rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.container h2{
+    text-align: center;
+}
+
+.songs{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.song-item{
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    width: 100%;
+    margin: 1.4rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+
+.artist{
+    font-style: italic;
+}
+
+
+.more-btn{
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    background-color: #ffa500;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #222;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px){
+    .trendingContainer{
+        /* display: none; */
+        visibility: hidden;
+    }
+}

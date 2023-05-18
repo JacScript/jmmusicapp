@@ -1,0 +1,49 @@
+.content-container{
+    width: 65%;
+    height: 100%;
+    position: relative;
+    border-radius: 13px ;
+}
+
+.content-panel{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-left: 30px;
+}
+
+.contentHeading{
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.content-panel p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.playlistbtn{
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    background-color: #ffa500;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #222;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px){
+    .content-container{
+        /* height: 4440px; */
+        width: 100%
+    }
+
+    .contentHeading{
+        font-size: 3rem;
+        /* margin-bottom: 10px; */
+    }
+}
