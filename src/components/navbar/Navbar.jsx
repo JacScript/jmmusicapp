@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MenuData } from "./MenuData";
+import CustomButton from "../customButton/CustomButton";
 
 import{ FaBars  } from "react-icons/fa";
 import{ ImCross  } from "react-icons/im";
@@ -17,10 +18,10 @@ const Navbar = () => {
     <nav className="navbarItems">
       <h1 className="logo">
       </h1>
-      <div className="menu-icons" onClick={HandlerClick}>
-          { showMenuIcon ? <ImCross className="dropdownbutton"/> :<FaBars className="dropdownbutton"/> }
+      <div className="menuIcons" onClick={HandlerClick}>
+          { showMenuIcon ? <ImCross className="dropdownButton"/> :<FaBars className="dropdownButton"/> }
       </div>
-      <ul className= { showMenuIcon ? "nav-menu active" : "nav-menu"}>
+      <ul className= { showMenuIcon ? "navMenu active" : "navMenu"}>
         {MenuData.map((item, index) => {
           return (
             <li key={index}>
@@ -31,6 +32,9 @@ const Navbar = () => {
             </li>
           );
         })}
+        <li>
+          <CustomButton className="navLinksMobile">Sign In</CustomButton>
+        </li>
       </ul>
     </nav>
   );

@@ -21,12 +21,7 @@
     cursor: pointer;
 }
 
-.fa-react{
-    margin-left: 0.2rem;
-    font-size: 1.6rem;
-}
-
-.nav-menu{
+.navMenu{
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
@@ -36,36 +31,26 @@
     justify-content: end;
 }
 
-.nav-links{
+.navLinks{
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
     padding: 0.7rem 1rem;
     white-space: nowrap;
 }
 
-.nav-links i{
+.navLinks i{
     padding-right: 10px;
 }
 
-/* .nav-links:hover{
-    background: orange;
-    border-radius: 4px;
-    transition: all 0.2s ease-in-out;
-} */
-
-/* .fa-bars{
-    color: #fff;
-} */
-
-.menu-icons{
+.menuIcons{
     display: none;
 }
 
-.dropdownbutton{
+.dropdownButton{
     color: rgba(0, 0, 0, 1);
 }
 
-.nav-links-mobile{
+.navLinksMobile{
     padding: 0.5rem 1rem;
     white-space: nowrap;
     background-color: orange;
@@ -73,9 +58,10 @@
     text-decoration: none;
     font-size: 1rem;
     color: #222;
+    border: none;
 }
 
-.nav-links-mobile:hover{
+.navLinksMobile:hover{
     background-color: #fff;
     color: orange;
 }
@@ -85,7 +71,7 @@
         z-index: 99;
     }
 
-    .nav-menu{
+    .navMenu{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -104,28 +90,28 @@
         transition: all 0.3s ease-in-out;
     }
 
-    .nav-menu.active{
+    .navMenu.active{
         left: 0;
     }
 
-    .nav-links{
+    .navLinks{
         display: block;
         widows: 100%;
         padding: 2rem 0;
         color: #222;
     }
 
-    .nav-links:hover {
+    .navLinks:hover {
         background: rgba(255, 255, 255, 0.25);
         backdrop-filter: blur(20px);
     }
 
-    .menu-icons{
+    .menuIcons{
         display: block;
     }
 
-    .nav-links-mobile{
-        padding: 1.5rem;
+    .navLinksMobile{
+        padding: 1.3rem 1.5rem;
         display: block;
         text-align: center;
         font-size: 1.3rem;

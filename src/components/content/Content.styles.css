@@ -1,11 +1,11 @@
-.content-container{
+.contentContainer{
     width: 65%;
     height: 100%;
     position: relative;
     border-radius: 13px ;
 }
 
-.content-panel{
+.contentPanel{
     margin: 0;
     position: absolute;
     top: 50%;
@@ -19,25 +19,14 @@
     margin-bottom: 10px;
 }
 
-.content-panel p{
+.contentPanel p{
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.playlistbtn{
-    padding: 0.5rem 1rem;
-    white-space: nowrap;
-    background-color: #ffa500;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 1rem;
-    color: #222;
-    border: none;
-    cursor: pointer;
-}
 
 @media screen and (max-width: 850px){
-    .content-container{
+    .contentContainer{
         height: 300px;
         width: 100%;
         /* background-color: yellow; */
@@ -48,7 +37,7 @@
         font-size: 2rem;
     }
 
-    .content-panel p{
+    .contentPanel p{
         font-size: 15px;
     }
 }
