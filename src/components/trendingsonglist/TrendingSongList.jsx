@@ -17,7 +17,9 @@ const TrendingSongList = () => {
           })
           }
            </div>
+           <div className="buttonContainer">
         <button className="more-btn"> View more</button>
+           </div>
       </div>
     </div>
   );
